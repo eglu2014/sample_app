@@ -41,7 +41,8 @@ describe "Contacts page" do
 
   before { visit contacts_path }
 
-  it { should have_content('Contacts') }
+  #it { should have_content('Contacts') }
+  it { should have_selector('h1', text:'Contacts') }
   it { should have_title(full_title('Contacts')) }
   
 end
