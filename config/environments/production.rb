@@ -1,6 +1,8 @@
 SampleApp::Application.configure do
-
 #Rails.application.configure do
+  
+  #mattr_accessor :dump_schema_after_migration
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Force all access to the app over SSL, use Strict-Transport-Security,
@@ -80,5 +82,6 @@ SampleApp::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Do not dump schema after migrations.
-  config.active_record.dump_schema_after_migration = false
+  # config.active_record.dump_schema_after_migration = false
+
 end
