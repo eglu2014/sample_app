@@ -1,4 +1,6 @@
-Rails.application.configure do
+SampleApp::Application.configure do
+
+#Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Force all access to the app over SSL, use Strict-Transport-Security,
